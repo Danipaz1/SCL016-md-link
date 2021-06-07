@@ -51,11 +51,18 @@ let resultado = array.map(function(elemento){
  console.log({code: dividir[0], name: dividir[1]});
 });
 
-let path = require('path');
 
-const anyFile = process.argv[2];
-let absPath = path.resolve(anyFile);
-let mdFile = path.extname(absPath);
+let fetch = require('node-fetch')
 
-console.log(mdFile);
+function ajaxPositive(response) {
+    console.log('response.ok: ', response.ok);
+    if(response.ok) {
+      response.text().then(showResult);
+    } else {
+      showError('status code: ' + response.status);
+      return false;
+    }
+  }
+
+  console.log(ajaxPositive(response));
 
