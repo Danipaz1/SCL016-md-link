@@ -92,17 +92,3 @@ module.exports = (anyFile, options) => {
 
     return readAFile(anyFile, options);
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
