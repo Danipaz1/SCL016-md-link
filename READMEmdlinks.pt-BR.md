@@ -43,7 +43,7 @@ node mdlinks archivo.md --validate.
 
 Y mostrará algo así:
 
-![mdLinks](./img/objeto.png)
+![mdLinks](httpÑ//../img/objeto.png)
 
 ### SI RETORNA UN ERROR
 
