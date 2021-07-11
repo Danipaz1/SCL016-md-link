@@ -1,6 +1,6 @@
 {
-  "name": "md-links-betafirstversion",
-  "version": "0.1.0",
+  "name": "md-links-betafirst",
+  "version": "1.1.0",
   "description": "link extractor for markdown files",
   "main": "./mdlinks.js",
   "dependencies": {
@@ -22,8 +22,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Danipaz1/SCL016-md-link/issues"
-  },
+
   "homepage": "https://github.com/Danipaz1/SCL016-md-link#readme"
 }

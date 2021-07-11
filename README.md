@@ -11,11 +11,11 @@ Además, existen dos formas de instalarlo, de manera local y de manera general, 
 
 ### local
 
-npm install --save 
+npm install --save https://github.com/Danipaz1/SCL016-md-link.git
 
 ### global
 
-npm install --save  -g
+npm install --save https://github.com/Danipaz1/SCL016-md-link.git -g
 
 
 ### ¿CÓMO USARLO COMO MÓDULO?
