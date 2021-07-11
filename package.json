@@ -1,9 +1,29 @@
 {
-  "name": "md-links",
+  "name": "md-links-betafirstversion",
   "version": "0.1.0",
+  "description": "link extractor for markdown files",
+  "main": "./mdlinks.js",
   "dependencies": {
     "chalk": "^4.1.1",
     "markdown-link-extractor": "^1.2.7",
     "node-fetch": "^2.6.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danipaz1/SCL016-md-link.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danipaz1/SCL016-md-link/issues"
+  },
+  "homepage": "https://github.com/Danipaz1/SCL016-md-link#readme"
 }

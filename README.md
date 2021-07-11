@@ -11,11 +11,11 @@ Además, existen dos formas de instalarlo, de manera local y de manera general, 
 
 ### local
 
-npm install --save https://github.com/AliceInWonderDev/SCL007-md-links
+npm install --save 
 
 ### global
 
-npm install --save https://github.com/AliceInWonderDev/SCL007-md-links -g
+npm install --save  -g
 
 
 ### ¿CÓMO USARLO COMO MÓDULO?
@@ -43,7 +43,7 @@ node mdlinks archivo.md --validate.
 
 Y mostrará algo así:
 
-![mdLinks](httpÑ//../img/objeto.png)
+![mdLinks](http//../img/objeto.png)
 
 ### SI RETORNA UN ERROR
 
