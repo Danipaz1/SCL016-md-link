@@ -5,10 +5,10 @@ let markdowndLinkExtractor = require('markdown-link-extractor');
 
 //RUTA ABS
 const anyFile = process.argv[2];
-let absPath = path.resolve(anyFile);
+let absolutePath = path.resolve(anyFile);
 
 //Retornar extensión de archivo
-let mdFile = path.extname(absPath);
+let mdFile = path.extname(absolutePath);
 
 //option --validate
 let options = process.argv[3];
@@ -23,9 +23,9 @@ const readAFile = (anyFile, options) => {
 
         fs.readFile(anyFile, 'utf8', (err, document) => {
             let links = markdowndLinkExtractor(document);
-            let absPath = path.resolve(anyFile);
+            let absolutePath = path.resolve(anyFile);
             let arrayLink = links.map((link) => {
-                return ({ absPath, link });
+                return ({ absolutePath, link });
 
             })
 

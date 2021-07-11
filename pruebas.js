@@ -51,18 +51,44 @@ let resultado = array.map(function(elemento){
  console.log({code: dividir[0], name: dividir[1]});
 });
 
+  
 
-let fetch = require('node-fetch')
 
-function ajaxPositive(response) {
-    console.log('response.ok: ', response.ok);
-    if(response.ok) {
-      response.text().then(showResult);
+//stats
+
+let fs = require('fs');
+
+
+
+fs.stat('pruebas.js', function (err, stat) {
+
+    if (err) {
+
+        console.log(err);
+
     } else {
-      showError('status code: ' + response.status);
-      return false;
-    }
-  }
 
-  console.log(ajaxPositive(response));
+        console.log('isFile: ' + stat.isFile());
+
+        if (stat.isFile()) {
+
+            // Tamaño del archivo:
+
+            console.log('size: ' + stat.size);
+
+            // Crear hora, objeto Fecha:
+
+            console.log('birth time: ' + stat.birthtime);
+
+            // Hora modificada, objeto Fecha:
+
+            console.log('modified time: ' + stat.mtime);
+
+        }
+
+    }
+
+});
+
+
 
